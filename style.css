@@ -1,0 +1,92 @@
+/* Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #006633, #00a859);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Container Central */
+.container {
+    max-width: 420px;
+    margin: auto;
+}
+
+/* Card Principal */
+.card {
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.card h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+.card p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+/* Botões Grandes */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+.btn {
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: 0.3s;
+}
+.btn.whatsapp {
+    background: #25d366;
+    color: white;
+}
+.btn.whatsapp:hover {
+    background: #1ebe5d;
+}
+.btn.planta {
+    background: #007bff;
+    color: white;
+}
+.btn.planta:hover {
+    background: #0069d9;
+}
+
+/* Localização */
+.localizacao {
+    font-size: 0.95rem;
+    color: #444;
+    background: #f5f5f5;
+    padding: 8px;
+    border-radius: 8px;
+    line-height: 1.4;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1.2rem;
+        padding: 16px;
+    }
+}
