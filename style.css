@@ -1,9 +1,9 @@
-/* Reset e Fonte */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(180deg, #006633, #00a859);
@@ -21,14 +21,15 @@ body {
 /* Card Principal */
 .card {
     background: white;
-    color: #333;
+    color: #222;
     border-radius: 12px;
     padding: 15px;
     margin-top: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 .card img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -88,5 +89,15 @@ body {
     .btn {
         font-size: 1.2rem;
         padding: 16px;
+    }
+}
+
+/* Ajuste para telas maiores */
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row;
+    }
+    .btn {
+        flex: 1;
     }
 }
